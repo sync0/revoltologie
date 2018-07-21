@@ -1,0 +1,19 @@
+#+BLOG: cahiers
+#+POSTID: 28
+#+TITLE:Dites-vous révoltologie?
+#+AUTHOR:SYNC0 
+#+EMAIL: cantorlunae@gmail.com
+#+DATE: [2016-08-28 Sun 12:54]
+#+LANGUAGE: fr
+#+OPTIONS: toc:nil num:nil pri:nil tags:nil ^:nil d:nil timestamp:t email:t ':t
+#+STARTUP: indent hidestars
+* C'est quoi la révoltologie? 
+Le mot /révoltologie/ n'est certainement pas le mien. Si ma
+mémoire--toujours tombant en morceaux--ne me trahit pas, le mot fut
+utilisé auparavant par Jacques Rancière pour nommer une revue (si
+celle-ci existe encore, je ne le sais pas). Quoiqu'il fût l'usage à ce
+temps-là, aujourd’hui j'ai besoin de la reprendre. 
+
+L'idée de fournir le prolétariat des éléments pour qu'il s'émancipe a déjà une histoire. 
+* Pourquoi écrire?
+Toujours

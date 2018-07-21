@@ -1,0 +1,10 @@
+#+TITLE:La dynamique du capitalisme - I 
+#+AUTHOR:SYNC0 
+#+EMAIL: cantorlunae@gmail.com
+#+DATE: {{{time(%Y-%m-%d)}}} 
+#+LANGUAGE: fr
+#+OPTIONS: toc:nil d:nil timestamp:t email:t ':t
+#+STARTUP: indent hidestars
+* C'est quoi la révoltologie? 
+
+* Pourquoi écrire?
