@@ -1,16 +1,16 @@
+#+DATE: [2018-07-29 Sun 13:49]
 #+BLOG: cahiers
 #+POSTID: 41
-#+BLOG: cahiers
 #+ORG2BLOG:
-#+DATE: [2018-07-18 Wed 21:53]
 #+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:t ^:t
 #+CATEGORY: academics 
 #+TAGS: advice, academics 
 #+DESCRIPTION: 
-#+TITLE: General Advice on Writing a Master's Thesis
+#+TITLE: Advice on Writing a Master's Thesis
 # Local Variables:
 # eval: (orwell-mode) 
 # End:
+
 As a Master's (M2) student of /Université Paris 1 - Panthéon Sorbonne/, I
 must submit by the end of the year a Master's thesis. 
 
@@ -51,6 +51,67 @@ oh reader, with the ordeal.
 All credit goes to these authors. I have only slightly reworked their
 advice to fit my needs. So let's begin!
 
+This post shows the application of this advice to my Master's thesis.
+
+This post is not intended as general advice on writing a thesis, but rather
+as an account of the ideas, tools, and specific organization of my Master's
+thesis. Likewise, the post was intended as a private way to group certain
+ideas to be used in future research. I publish it because it might help
+certain people organize their own research. Thus, the advice contained
+herein is not aimed at a generalist audience, but actually was implemented
+by me with a fairly complex system. 
+
+If you don't have a system as powerful as Emacs' Org mode, then this system
+might be to cumbersome for you. But if you have enough technical skills,
+the advice herein might boost your productivity. 
+
+So the audience for this post is very reduced. That said, even if you
+aren't interested in mastering any of the software tools I discuss, the
+advice on the organization of the thesis by stages might be of some use.
+
+* Tips
+** Time
+I calculated that I would write a Master's thesis of about 133 pages. 
+
+For the M2, we only dispose of roughly one year to do all the thesis, from
+planning to writing. [fn:5] 
+
+Calculating that I don't write at all during the weekends, and that I will
+spend two thirds of the year in research and planning, and roughly one
+third of the year in writing (from the first draft to final version); the
+time spent in only writing is expected to be 95 days (about three months).
+
+The actual time spent was ...
+** Organization of Research Materials
+ I divided the readings into two categories: read and unread.
+
+ Using org mode's priorities, I adopted the following codes:
+ - ~#A~: Key text: A must read.
+ - ~#B~: Important text: Read this because of the importance of the author or what he/she represents.
+ - ~#C~: Ancillary text: Choose whether to read this based on the progress of the thesis.
+ - ~none~: Boundary text: Choose whether to read this if there remains any time.
+** Activity Log
+** Selected Readers
+** Tools
+*** Text Editor
+ I used Emacs' Org mode to plan, draft, and write the thesis. If the
+ source code interests you, visit the ~org~ files. 
+
+ Using the org exporter, I exported the ~org~ files into ~LaTeX~, and then into pdfs.
+*** Bibliography Management
+ I used Mendeley to maintain a bibliography file called ~master.bib~. 
+*** Typography
+ I used LaTeX's KOMA Script class ~scrbook~.
+*** Fonts
+I only used non-proprietary fonts: The main font is Linux Libertine,
+alongside Linux Biolinum and Liberation Mono.
+** File Organization
+I included detailed comments on the organization of the thesis' files in
+the dedicated GitHub [[https://github.com/sync0/memoire_m2][repository]]. Since it is publicly available, you can
+download them and take a look.
+* Methodology
+Undecided.
+* Stages for the Completion of a Master's Thesis
 I have clustered the steps to complete the Master's thesis in six stages. I
 will present them before going into detail:
 
@@ -116,6 +177,7 @@ will present them before going into detail:
      - [ ] Discuss the Last Draft with the selected readers.
      - [ ] Correct and rewrite the Last Draft. 
   4. Final Version of the Thesis 
+     - [ ] Revise the introductions & conclusions.
 - Stage V
   1. Agreement of Thesis Adviser for Defense (Jury)
   2. Fine Tuning
@@ -124,237 +186,330 @@ will present them before going into detail:
   4. Due Diligence for Defense
 - Stage VI
   1. Defense
+** Stage I
+*** Choice of Subject-matter
+ Meditate these two questions: What are you trying to answer? What's the
+ purpose of writing about this subject-matter?
 
-* Stage I
-** Choice of Subject-matter
-Meditate these two questions: What are you trying to answer? What's the
-purpose of writing about this subject-matter?
+ - [ ] Choose the subject-matter.
+*** First Sifting
+ Identify how many texts (one, two, a thousand?) there are to read on the subject.
 
-- [ ] Choose the subject-matter.
-** First Sifting
-Identify how many texts (one, two, a thousand?) there are to read on the subject.
+ To quickly identify the key texts, peruse and cross check the
+ bibliographies of those texts that catch your attention. If a text is cited
+ several times therein, it is an important text. After identifying a long
+ list of texts, prioritize their reading. For this thesis, I have adopted
+ the following hierarchy: [fn:2]
 
-To quickly identify the key texts, peruse and cross check the
-bibliographies of those texts that catch your attention. If a text is cited
-several times therein, it is an important text. After identifying a long
-list of texts, prioritize their reading. For this thesis, I have adopted
-the following hierarchy: [fn:2]
+ - ~#A~: Key text: A must read.
+ - ~#B~: Important text: Read this because of the importance of the author or what he/she represents.
+ - ~#C~: Ancillary text: Choose whether to read this based on the progress of the thesis.
+ - ~none~: Boundary text: Choose whether to read this if there remains any time.
 
-- ~#A~: Key text: A must read.
-- ~#B~: Important text: Read this because of the importance of the author or what he/she represents.
-- ~#C~: Ancillary text: Choose whether to read this based on the progress of the thesis.
-- ~none~: Boundary text: Choose whether to read this if there remains any time.
+ When approaching a text, don't read everything, and don't read as a
+ machine. 
 
-When approaching a text, don't read everything, and don't read as a
-machine. 
+   - [ ] Identify the key texts---those to be read and analyzed as
+     soon as possible because of their direct relation to the subject-matter.
+   - [ ] Identify the key authors---those to be read, heard, or consulted with.
+** Stage II 
+*** Draft of the Framework
+ For convenience's sake, I call /Framework/ the group consisting of the main
+ question, the nodal points, the secondary questions, the research
+ hypotheses, the scope and interrelations, the methodology, and the sources.
+ The Framework is a compass to research; it will prevent sailing
+ astray into ancillary topics.
 
-  - [ ] Identify the key texts---those to be read and analyzed as
-    soon as possible because of their direct relation to the subject-matter.
-  - [ ] Identify the key authors---those to be read, heard, or consulted with.
-* Stage II 
-** Draft of the Framework
-For convenience's sake, I call /Framework/ the group consisting of the main
-question, the nodal points, the secondary questions, the research
-hypotheses, the scope and interrelations, the methodology, and the sources.
-The Framework is a compass to research; it will prevent sailing
-astray into ancillary topics.
+ For now, we define a Draft of the Framework consisting of the main question,
+ the research hypotheses, and the methodology. 
 
-For now, we define a Draft of the Framework consisting of the main question,
-the research hypotheses, and the methodology. 
+ The heart of the Framework is the Main Question---the guiding light to
+ research and (later) writing. This is the /most/ important aspect of the
+ thesis work. Working out a sloppy question is akin to pursuing a mirage in
+ the desert. The only way to discriminate good questions from sloppy
+ questions is by reading about methodology in your own field and perhaps
+ some philosophy of science.
 
-The heart of the Framework is the Main Question---the guiding light to
-research and (later) writing. This is the /most/ important aspect of the
-thesis work. Working out a sloppy question is akin to pursuing a mirage in
-the desert. The only way to discriminate good questions from sloppy
-questions is by reading about methodology in your own field and perhaps
-some philosophy of science.
+ Remember to restrain that impulse to delve into every debate around the
+ Main Question in the thesis. This is both wasteful and impossible.
 
-Remember to restrain that impulse to delve into every debate around the
-Main Question in the thesis. This is both wasteful and impossible.
+ We check with the thesis adviser to incorporate his comments and criticism
+ into the Framework.
 
-We check with the thesis adviser to incorporate his comments and criticism
-into the Framework.
+ (I couldn't find a good translation for /axes d'interpretation/, but I had to
+ include it as an essential part of the methodology: This term refers to the
+ theoretical perspective---the lens, the angle of attack---used to appraise
+ the Main Question. Spend some time thinking about this matter. Despite the
+ American belief on the possibility of simply /stating the facts/, serious
+ academic work should be aware of its own methodology, its limits, its
+ context. Should I be right, a sizable portion of what passes for academic
+ writing would be denounced for its laziness and redundancy. Finding out the
+ degree to which this evil afflicts your academic department is left to you,
+ oh reader, as an exercise.)
 
-(I couldn't find a good translation for /axes d'interpretation/, but I had to
-include it as an essential part of the methodology: This term refers to the
-theoretical perspective---the lens, the angle of attack---used to appraise
-the Main Question. Spend some time thinking about this matter. Despite the
-American belief on the possibility of simply /stating the facts/, serious
-academic work should be aware of its own methodology, its limits, its
-context. Should I be right, a sizable portion of what passes for academic
-writing would be denounced for its laziness and redundancy. Finding out the
-degree to which this evil afflicts your academic department is left to you,
-oh reader, as an exercise.)
+ - [ ] Write the Draft of the Framework:
+   - [ ] Main Question.
+   - [ ]Scope and interrelations.
+     - [ ] Nodal points. 
+   - [ ] Research hypotheses.
+   - [ ] Methodology.
+     - [ ] Debates & controversies around the main question.
+     - [ ] Axes d'interpretation.
+ - [ ] Before proceeding, check the Draft of the Framework with the thesis
+   adviser.
+*** Framework 
+ Incorporating the thesis adviser's comments, define a complete Framework:
+ - [ ] Write the Framework:
+   - [ ] Main Question.
+     - [ ] Secondary questions.
+   - [ ]Scope and interrelations.
+     - [ ] Nodal points. 
+   - [ ] Research hypotheses.
+   - [ ] Methodology.
+     - [ ] Debates & controversies around the main question.
+     - [ ] Axes d'interpretation.
+   - [ ] Sources.
+     - [ ] Update list of key texts.
+     - [ ] Update list of key authors.
+*** Research Plan
+ The /Research Plan/ serves to identify the different themes and questions that
+ should orient the research. 
 
-- [ ] Write the Draft of the Framework:
-  - [ ] Main Question.
-  - [ ]Scope and interrelations.
-    - [ ] Nodal points. 
-  - [ ] Research hypotheses.
-  - [ ] Methodology.
-    - [ ] Debates & controversies around the main question.
-    - [ ] Axes d'interpretation.
-- [ ] Before proceeding, check the Draft of the Framework with the thesis
-  adviser.
-** Framework 
-Incorporating the thesis adviser's comments, define a complete Framework:
-- [ ] Write the Framework:
-  - [ ] Main Question.
-    - [ ] Secondary questions.
-  - [ ]Scope and interrelations.
-    - [ ] Nodal points. 
-  - [ ] Research hypotheses.
-  - [ ] Methodology.
-    - [ ] Debates & controversies around the main question.
-    - [ ] Axes d'interpretation.
-  - [ ] Sources.
-    - [ ] Update list of key texts.
-    - [ ] Update list of key authors.
-** Research Plan
-The /Research Plan/ serves to identify the different themes and questions that
-should orient the research. 
+ Do not confuse the /Research Plan/ with the /Writing Plan/. The former is a guide
+ to research, whereas the latter is a guide to writing. In other words, the
+ Research Plan is not supposed to constitute the skeleton of the thesis' first
+ draft. 
 
-Do not confuse the /Research Plan/ with the /Writing Plan/. The former is a guide
-to research, whereas the latter is a guide to writing. In other words, the
-Research Plan is not supposed to constitute the skeleton of the thesis' first
-draft. 
+ Discuss with the thesis adviser on the general orientation, and present
+ him/her with the Framework and the Research Plan. Do likewise with a group of
+ selected readers.
 
-Discuss with the thesis adviser on the general orientation, and present
-him/her with the Framework and the Research Plan. Do likewise with a group of
-selected readers.
+ In /L'art de la these/, Michel Beaud recommends finding a consistent group of
+ readers to comment and criticize the thesis work at different stages.
+ Following his advise, I have searched for a knowledgeable reader (in the
+ subject-matter of the thesis) and an unknowledgeable but /good writer/
+ reader. The former should focus (tell him/her explicitly to do so) on content, the
+ latter on style and logic (of the argumentation). 
 
-In /L'art de la these/, Michel Beaud recommends finding a consistent group of
-readers to comment and criticize the thesis work at different stages.
-Following his advise, I have searched for a knowledgeable reader (in the
-subject-matter of the thesis) and an unknowledgeable but /good writer/
-reader. The former should focus (tell him/her explicitly to do so) on content, the
-latter on style and logic (of the argumentation). 
+ - [ ] Write the Research Plan:
+ - [ ] Present the thesis adviser with the Framework and the Research Plan.
+ - [ ] Present the selected readers with the Framework and the Research Plan.
+*** Research 
+ This is the time for the Final Sifting. Be absolutely careful with this
+ stage---lack of diligence could result in missing a key text or a key
+ author. Don't waste precious time reading mediocre books; some expound the
+ same argument but better. The only thing worse than finding about a key
+ text while writing the first draft of the thesis, is being told about it
+ during the defense jury. Do /not/ let that happen!
 
-- [ ] Write the Research Plan:
-- [ ] Present the thesis adviser with the Framework and the Research Plan.
-- [ ] Present the selected readers with the Framework and the Research Plan.
-** Research 
-This is the time for the Final Sifting. Be absolutely careful with this
-stage---lack of diligence could result in missing a key text or a key
-author. Don't waste precious time reading mediocre books; some expound the
-same argument but better. The only thing worse than finding about a key
-text while writing the first draft of the thesis, is being told about it
-during the defense jury. Do /not/ let that happen!
+ The same advice for the First Sifting applies: When approaching a text,
+ don't read everything, and don't read as a machine.
 
-The same advice for the First Sifting applies: When approaching a text,
-don't read everything, and don't read as a machine.
+ Since time is scarce, when choosing whether to read a text, ask yourself:
+ Does this text provide any robust argument to address the main question?
+ Does it clarify or complement the question somehow?
 
-Since time is scarce, when choosing whether to read a text, ask yourself:
-Does this text provide any robust argument to address the main question?
-Does it clarify or complement the question somehow?
+ Read carefully, and take copious notes.
 
-Read carefully, and take copious notes.
+ I stored all research notes in ~master.org~, ~notes.org~ and ~memoire_draft.org~. 
 
-I stored all research notes in ~master.org~, ~notes.org~ and ~memoire_draft.org~. 
+ Notes about specific authors and texts are in ~master.org~. Notes about
+ specific sections (Framework, Research Plan, Outline, Writing Plan, Drafts,
+ etc.) are in ~memoire_draft.org~. Thoughts, inspiring ideas, meditations, and
+ questions (i.e., most notes) are in ~notes.org~.
 
-Notes about specific authors and texts are in ~master.org~. Notes about
-specific sections (Framework, Research Plan, Outline, Writing Plan, Drafts,
-etc.) are in ~memoire_draft.org~. Thoughts, inspiring ideas, meditations, and
-questions (i.e., most notes) are in ~notes.org~.
+ - [ ] Final Sifting:
+   - [ ] Update list of key texts.
+   - [ ] Update list of key authors.
+ - [ ] If necessary, update any component of the Framework, based on your
+   findings.
+** Stage III 
+*** Draft of the Outline.
+ The Outline is the group consisting of the Main Question, the Directing
+ Idea, and the Argument (around the directing idea); it is a compass to
+ writing the first draft of the thesis. [fn:4]
 
-- [ ] Final Sifting:
-  - [ ] Update list of key texts.
-  - [ ] Update list of key authors.
-- [ ] If necessary, update any component of the Framework, based on your
-  findings.
-* Stage III 
-** Draft of the Outline.
-(Instead of /Framework/ and /Outline/, Beaud uses the terms /Problematique I/ and
-/Problematique II/. I found his formulation confusing; thus, I oppose the
-Framework and Research Plan to the Outline and Writing Plan to discriminate
-between two different stages in the preparation of the thesis. Although I
-could have used the term Framework II for the Outline, I thought Outline
-better reflects its function to organize the text of the first draft of the
-thesis. Unfortunately, the term Outline is potentially confusing because it
-alludes to the venerable ~I: Introduction~, ~II: Body~, ~III: Conclusion~ schema
-of high school English composition classes. This is /not/ what is meant. In
-fact, do yourself a favor and forget that puerile schema. Or better, use it
-sparingly for the plug-and-chug canned writing of the academic profession's
-due diligence (exams, research proposals, etc).)
+ The Directing Idea is the one-line response to the Main Question; it should
+ structure the Argument. 
 
-The Outline is the group consisting of the Main Question, the Directing
-Idea, and the Argument (around the directing idea); it is a compass to
-writing the first draft of the thesis. 
+ The Argument is the set of logical steps that respond to the Main
+ Question. 
 
-The Directing Idea is the one-line response to the Main Question; it should
-structure the Argument. 
+ By this advanced stage, it is normal to have witnessed the evolution of the
+ Main Question based on the results of the research. After all, it is
+ pretentious to think it possible to foresee /a priori/ the findings of
+ research. Should this be false, at least in the social sciences, most
+ research would be tautological.
 
-The Argument is the set of logical steps that respond to the Main
-Question. 
+ - [ ] Write the Draft of the Outline:
+   - [ ] Update the Main Question.
+   - [ ] Directing idea. 
+   - [ ] Argument.
+*** Draft of  Writing Plan. 
+ The Writing Plan structures the Argument into parts, chapters, sections,
+ subsections, etc. You must provide provisional titles to these structural
+ elements---they constitute the skeleton of the first draft of the thesis.
 
-By this advanced stage, it is normal to have witnessed the evolution of the
-Main Question based on the results of the research. After all, it is
-pretentious to think it possible to foresee /a priori/ the findings of
-research. Should this be false, at least in the social sciences, most
-research would be tautological.
+ I repeat: the Research Plan is /not/ the Writing Plan; the former addresses
+ you, the researcher, while the latter addresses the audience. Therefore,
+ the Writing Plan should be produced thinking about an angle of attack that
+ captivates the interest of the reader and convinces him/her that the
+ Argument is right. Wielding the Directing Idea as a torch, you should guide
+ the reader throughout the structural elements, each with their own Main
+ Idea. After lighting up all the Main Ideas in the structural elements, the
+ reader should see the light---the answer to the Main Question.
 
-- [ ] Write the Draft of the Outline:
-  - [ ] Update the Main Question.
-  - [ ] Directing idea. 
-  - [ ] Argument.
-** Draft of  Writing Plan. 
-The Writing Plan structures the Argument into parts, chapters, sections,
-subsections, etc. You must provide provisional titles to these structural
-elements---they constitute the skeleton of the first draft of the thesis.
+ - [ ] Draft of the Writing Plan.
+ - [ ] Discuss these elements with the thesis adviser.
+ - [ ] Discuss these elements with the selected readers.
+*** Additional Research
+ I hesitate to place this stage in this position, but sometimes it is
+ necessary. Should anybody (thesis adviser, selected readers) point out any
+ major holes in the Argument, this is the stage to paper over them. 
 
-I repeat: the Research Plan is /not/ the Writing Plan; the former addresses
-you, the researcher, while the latter addresses the audience. Therefore,
-the Writing Plan should be produced thinking about an angle of attack that
-captivates the interest of the reader and convinces him/her that the
-Argument is right. Wielding the Directing Idea as a torch, you should guide
-the reader throughout the structural elements, each with their own Main
-Idea. After lighting up all the Main Ideas in the structural elements, the
-reader should see the light---the answer to the Main Question.
+ But this is /not/ the time to rebuild the house from the foundations. Should
+ that be the case, you have been sloppy with the Final Sifting. Pray to
+ Saint Thomas Aquinas, take a walk in the park, and tinker with the
+ Directing Idea. If kicking didn't work so far, try punching.
+*** Draft of the First Draft of the Thesis.
+ This preparatory text identifies the best structural elements to mount over
+ the Argument of the thesis.
+ - [ ] Draft of the First Draft of the Thesis.
+** Stage IV 
+***  Outline and Writing Plan
+ After discussing with the thesis adviser and selected readers on the draft
+ of the Outline and the Draft of the Writing Plan, incorporate their
+ comments into the final version of these elements. 
 
-- [ ] Draft of the Writing Plan.
-- [ ] Discuss these elements with the thesis adviser.
-- [ ] Discuss these elements with the selected readers.
-** Additional Research
-I hesitate to place this stage in this position, but sometimes it is
-necessary. Should anybody (thesis adviser, selected readers) point out any
-major holes in the Argument, this is the stage to paper over them. 
+ - [ ] Write the Outline.
+ - [ ] Write the Writing Plan.
+*** Classification of the documentation
+ Pass one to two weeks classifying the documentation according to the writing
+ plan: Create folders for every chapter plus one for the introduction, one
+ for the conclusion, and one for unclassified documents (those that do not fit
+ in any chapter).[fn:3]
 
-But this is /not/ the time to rebuild the house from the foundations. Should
-that be the case, you have been sloppy with the Final Sifting. Pray to
-Saint Thomas Aquinas (or your favorite deity), take a walk in the park, and
-tinker with the Directing Idea. If kicking didn't work so far, try
-punching. 
-** Draft of the First Draft of the Thesis.
-This preparatory text identifies the best structural elements to mount over
-the Argument of the thesis.
-- [ ] Draft of the First Draft of the Thesis.
-* 無 Stage IV 
-** Outline and Writing Plan
-After discussing with the thesis adviser and selected readers on the draft
-of the Outline and the Draft of the Writing Plan, incorporate their
-comments into the final version of these elements. 
-- [ ] Write the Outline.
-- [ ] Write the Writing Plan.
-** First Draft of the Thesis 
-Now is the time to begin writing the First Draft of the Thesis. 
+ It's time to classify all the documentation following your Writing Plan. 
 
-- [ ] Discuss the First Draft with the thesis adviser.
-- [ ] Discuss the First Draft with the selected readers.
-- [ ] Correct and rewrite the First Draft. 
-** Last Draft of the Thesis 
-- [ ] Discuss the Last Draft with the thesis adviser.
-- [ ] Discuss the Last Draft with the selected readers.
-- [ ] Correct and rewrite the Last Draft. 
-** Final Version of the Thesis 
-* 無 Stage V
-** Agreement of Thesis Adviser for Defense (Jury)
-** Fine Tuning
-- [ ] Correct the Final Version. 
-** Printing
-** Due Diligence for Defense
-* Stage VI 
-** Defense
+ If the same document finds a home in two different chapters, mark that
+ document to remember that. Since it is difficult to keep track of every
+ document and every old paragraph you have written, your risk repeating the
+ same idea over and over. 
+
+ While classifying the documentation, should new ideas (arguments,
+ provisory chapter/section titles, etc.) arise, write them in a paper that
+ you will deposit in the correct folder. 
+
+ After the documents have been all arranged, there are two possibilities.
+**** The folders are filled in a well-balanced manner.
+ In the first case, do not read further. Begin writing chapter one of your
+ thesis.
+**** Some folders are much bigger than others.
+ For the second case, some folders are too thick while others are not. 
+
+ For the thick, break up the folder into two chapters or reflect on the
+ possibility of moving certain documents elsewhere (only if that would not
+ affect the coherence of the Argument).
+
+ For the too thin, there are three possibilities: 
+ 1. Feed this folder with materials from the thick folders.
+ 2. The research is insufficient; do supplementary research to enrich the
+    arguments and/or the sources.
+ 3. This chapter is an empty shell (the materials therein are too light).
+    Use this material as the conclusion of a bigger chapter of or of the part. 
+**** The /Unclassified/ folder resembles King James' Bible
+ This is tricky. A choice is necessary: Put this material apart, as it
+ might be included in a future article or book. Try to rethink the
+ organization of the thesis, using different parts and chapters to fit in
+ some of this materials. 
+*** First Draft of the Thesis 
+ Now is the time to begin writing the First Draft of the Thesis. 
+
+ A similar organization is necessary as that used to constitute the parts
+ and chapters. 
+
+ We use one binder per chapter plus one for the introduction, one for the
+ conclusion, and one for unclassified documents (it might be necessary to
+ have folders for the part introductions and conclusions; that is to say,
+ one folder per part.). Inside every binder we will have subdivisions
+ according to the number of sections plus one for the chapter introduction,
+ one for the chapter conclusion, and one for the unclassified. 
+
+ Likewise, inside every sections, we will divide (with dividers, or
+ something else) according to the number of paragraphs. This latter division
+ shouldn't be strictly followed but is intended as a guide.  
+
+ - [ ] Discuss the First Draft with the thesis adviser.
+ - [ ] Discuss the First Draft with the selected readers.
+ - [ ] Correct and rewrite the First Draft. 
+*** Last Draft of the Thesis 
+Read just the general, part, chapter, section introducing and concluding
+paragraphs to ensure the coherence of the train of thought.
+
+Every great structural division---beginning and end of the thesis,
+beginning and end of the part, beginning and end of the chapter---has to be
+introduced and concluded.
+
+To introduce is to put into perspective the directing idea of the part
+(whole thesis, part, chapter), to evoke the framework in which it is
+placed, and how it is formulated and treated. 
+
+Likewise, concluding is not just summarizing: it is to group the deployed
+elements  that contribute to the directing idea, and synthetize them along
+with certain further developpments of response elements to be treated, or
+simply to be evoked.
+
+Read the only the titles (as they would appear in the table of contents) to
+check that they reflect the train of thought. 
+
+ - [ ] Revise the introductions & conclusions.
+ - [ ] Discuss the Last Draft with the thesis adviser.
+ - [ ] Discuss the Last Draft with the selected readers.
+ - [ ] Correct and rewrite the Last Draft. 
+*** Final Version of the Thesis 
+ Take a day off, where you are feeling good. Read the whole text to ensure
+ the coherence of the whole.
+
+ Besides the group of selected readers, find a reader without previous
+ exposure to the thesis. They might give useful comments on the
+ organisation of the progression of the train of thought.
+
+ Incorporate any comments into the final version.
+
+ Likewise, check for any ortography and typographical errors. 
+** Stage V
+*** Agreement of Thesis Adviser for Defense (Jury)
+*** Fine Tuning
+ - [ ] Correct the Final Version. 
+*** Printing
+*** Due Diligence for Defense
+** Stage VI 
+*** Defense
 * Footnotes
+
+[fn:5] For the academic year 2018-2019, classes begun on September
+10th (day of start of classes) and exams for the second semester
+finished May 16th. This corresponds with the period of the
+thesis.
+
+[fn:4] Instead of /Framework/ and /Outline/, Beaud uses the terms /Problematique
+I/ and /Problematique II/. I found his formulation confusing; thus, I oppose
+the Framework and Research Plan to the Outline and Writing Plan to
+discriminate between two different stages in the preparation of the
+thesis. Although I could have used the term Framework II for the Outline, I
+thought Outline better reflects its function to organize the text of the
+first draft of the thesis. Unfortunately, the term Outline is potentially
+confusing because it alludes to the venerable ~I: Introduction~, ~II: Body~,
+~III: Conclusion~ schema of high school English composition classes. This is
+/not/ what is meant. In fact, do yourself a favor and forget that puerile
+schema. Or better, use it sparingly for the plug-and-chug canned writing of
+the academic profession's due diligence (exams, research proposals, etc).
+
+[fn:3] Even if you are a master of the digital arts, I recommend using
+cardboard folders for this step. Sometimes it helps to spread all the
+documentation of a chapter folder on the floor to reflect on the
+organization. This holistic view permits a grasp of the documentation that
+is not yet possible to achieve with a screen.
 
 [fn:2] These use Emacs' org mode's priorities. 
 
