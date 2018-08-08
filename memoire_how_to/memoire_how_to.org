@@ -31,15 +31,23 @@ most of the suggestions I discuss herein regarding research planning,
 archival management, and writing organization are more-or-less his.
 
 * 無 Tools
-Mastering the tools and the skills that will save time requires long hours
-of study and practice. As counterintuitive as it may seem, before you can save
-time, you must "waste" it. 
+Mastering time saving tools and skills requires long hours of study and
+practice. As counterintuitive as it seems, to save time, you must first
+"waste" it. With this in mind, Beaud recommends spending time learning and
+implementing a note taking method that allows easy tagging and retrieval of
+research notes. Since in the 21^st century most students will pick a
+computer for this task, think carefully about your choice of
+software---whatever this be, make sure to learn it thoroughly.
 
+I must confess that I am not satisfied with the setup I devised, mainly,
+because it is unpractical for other people.
+
+[[./sync0_desktop.jpg]]
 
 I did most thesis work with a laptop, French school notebooks (/grands
 carreaux/), cardboard archivers, and binders:
 
-[Image of cahier grands carreaux]
+[[./grands_carreaux.jpg]]
 
 My laptop is a Lenovo X230 i7 with 16GB RAM, one SATA 250GB SSD running
 Arch Linux, and one M.2. 250GB SSD running Windows 10.
